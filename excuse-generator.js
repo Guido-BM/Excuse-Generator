@@ -1,13 +1,185 @@
 const buttonGenerate = document.getElementById("generateExcuse");
-const theExcuse = document.getElementById("randomExcuse");
+const languageSelect = document.getElementById("languageSelect");
+const excuseDisplay = document.getElementById("randomExcuse");
 
-buttonGenerate.addEventListener("click", function () {
-  let newExcuse = generateExcuse();
-  theExcuse.textContent = newExcuse;
-});
+buttonGenerate.addEventListener("click", generateAndDisplayExcuse);
+languageSelect.addEventListener("change", generateAndDisplayExcuse);
+
+function generateAndDisplayExcuse() {
+  const excuse = generateExcuse();
+  excuseDisplay.innerHTML = excuse;
+}
 
 function generateExcuse() {
-  const excusesPart1 = [
+  const selectedLanguage = languageSelect.value;
+  if (selectedLanguage === "en") {
+
+    // Generar excusa en inglés
+    const excusesEnPart1 = [
+      "My pet unicorn",
+      "A talking parrot",
+      "Elvis Presley",
+      "The Loch Ness Monster",
+      "A time-traveling hamster",
+      "A ninja turtle",
+      "A friendly alien",
+      "The ghost of Abraham Lincoln",
+      "A zombie horde",
+      "Santa Claus",
+      "My grandma's cookie recipe",
+      "A magical wand",
+      "A robot butler",
+      "A herd of stampeding unicorns",
+      "A singing pirate",
+      "A swarm of fire-breathing dragonflies",
+      "A team of superhero kittens",
+      "A troupe of tap-dancing penguins",
+      "The Tooth Fairy",
+      "A friendly vampire",
+      "A leprechaun's pot of gold",
+      "A squad of disco-dancing zombies",
+      "A gang of mischievous lemmings",
+      "A colony of singing ants",
+      "A marching band of gummy bears",
+      "A team of acrobatic squirrels",
+      "A parade of roller-skating giraffes",
+      "A convention of time-traveling physicists",
+      "A group of breakdancing robots",
+      "A flash mob of invisible ninjas",
+      "A committee of mind-reading magicians",
+      "A posse of teleporting cowboys",
+      "A platoon of super-intelligent dolphins",
+      "A pack of surfing kangaroos",
+      "A flock of jetpack-wearing flamingos",
+      "A horde of tap-dancing zombies",
+      "A choir of singing mermaids",
+      "A symphony of musical elephants",
+      "A gathering of ice cream-eating penguins",
+      "A team of synchronized swimming octopuses",
+      "A crew of rollerblading bears",
+      "A party of breakdancing aliens",
+      "A congregation of disco-loving cats",
+      "A troop of teleporting squirrels",
+      "A gang of mind-reading pandas",
+      "A group of time-traveling penguins",
+      "A swarm of dancing fireflies",
+      "A band of rock and roll chickens",
+      "A squad of breakdancing robots",
+      "A herd of juggling kangaroos",
+    ];
+
+    const excusesEnPart2 = [
+      "and I went to the moon together",
+      "and I started a rock band",
+      "and I opened a theme park",
+      "and I won the World Series",
+      "and I discovered a new planet",
+      "and I became world-famous chefs",
+      "and I joined the circus",
+      "and I built a rocket ship",
+      "and I solved a mystery",
+      "and I won a dance competition",
+      "and I traveled through time",
+      "and I fought off a zombie apocalypse",
+      "and I became professional spies",
+      "and I starred in a blockbuster movie",
+      "and I won a gold medal in synchronized swimming",
+      "and I started a fashion line",
+      "and I became superheroes",
+      "and I sailed around the world",
+      "and I became magicians",
+      "and I won a Nobel Prize",
+      "and I built a time machine",
+      "and I discovered a hidden treasure",
+      "and I founded a chocolate factory",
+      "and I tamed wild animals",
+      "and I solved a cold case",
+      "and I became famous astronauts",
+      "and I started a circus for aliens",
+      "and I traveled to the center of the Earth",
+      "and I became professional treasure hunters",
+      "and I opened a restaurant on Mars",
+      "and I became world-champion surfers",
+      "and I won a reality TV show",
+      "and I became secret agents",
+      "and I built a robot army",
+      "and I solved a riddle from an ancient civilization",
+      "and I won a cooking competition",
+      "and I went on a quest for a magical artifact",
+      "and I became rock and roll legends",
+      "and I discovered a portal to another dimension",
+      "and I founded a colony on Mars",
+      "and I became time-traveling archaeologists",
+      "and I won a marathon on the moon",
+      "and I started a detective agency",
+      "and I became famous magicians",
+      "and I saved the world from an alien invasion",
+      "and I won a dance-off against robots",
+      "and I became legendary explorers",
+      "and I solved the mystery of the Bermuda Triangle",
+      "and I started a circus for animals",
+      "and I built a roller coaster in our backyard",
+    ];
+
+    const excusesEnPart3 = [
+      "while riding on a giant rubber duck",
+      "with only a spoon and a rubber chicken.",
+      "while juggling flaming torches.",
+      "while wearing pink tutus.",
+      "in a blizzard of cotton candy.",
+      "on a surfboard made of spaghetti.",
+      "while breakdancing on a tightrope.",
+      "in a hot air balloon shaped like a banana.",
+      "while riding a unicycle on a tightrope.",
+      "while skydiving into a pool of chocolate pudding.",
+      "while hula hooping with flaming hoops.",
+      "in a library filled with talking books.",
+      "while doing the moonwalk on the moon.",
+      "while tap dancing on a rainbow.",
+      "in a bubblegum bubble bath.",
+      "while playing chess with a chess-playing robot.",
+      "in a room filled with bouncing bunnies.",
+      "while salsa dancing with a salsa jar.",
+      "on a skateboard being pulled by a cheetah.",
+      "while doing the limbo under a laser beam.",
+      "in a maze made of giant cheeseburgers.",
+      "while water skiing on a river of chocolate.",
+      "while tightrope walking over a pit of whipped cream.",
+      "in a disco ballroom with disco-dancing dinosaurs.",
+      "while snowboarding down a mountain of marshmallows.",
+      "on a pogo stick made of rubber bands.",
+      "while playing hide-and-seek with invisible friends.",
+      "in a room filled with talking paintings.",
+      "while bungee jumping from a flying saucer.",
+      "while playing hopscotch on a rainbow.",
+      "in a swimming pool filled with sparkling lemonade.",
+      "while skateboarding on a rainbow-colored sidewalk.",
+      "in a room with floors made of trampolines.",
+      "while playing frisbee with a flying unicorn.",
+      "in a pillow fight with fluffy pillows.",
+      "while ice skating on a frozen chocolate river.",
+      "on a tightrope made of licorice.",
+      "while riding a roller coaster made of spaghetti.",
+      "in a room with walls made of giant bubble wrap.",
+      "while surfing on a wave of whipped cream.",
+      "in a room with a floor made of giant piano keys.",
+      "while playing tag with lightning bolts.",
+      "in a giant game of chess with real-life chess pieces.",
+      "while doing yoga with flexible rubber bands.",
+      "in a room with floating balloons.",
+      "while playing chess with a talking parrot.",
+      "on a trampoline made of bouncy marsh.",
+    ];
+
+    const randomEnPart1 = excusesEnPart1[Math.floor(Math.random() * excusesEnPart1.length)];
+    const randomEnPart2 = excusesEnPart2[Math.floor(Math.random() * excusesEnPart2.length)];
+    const randomEnPart3 = excusesEnPart3[Math.floor(Math.random() * excusesEnPart3.length)];
+
+    return "You will not believe this but:" + "<br/>" + randomEnPart1 + " " + randomEnPart2 + " " + randomEnPart3;
+
+  }
+  // Generar excusa en español
+  const excusesEsPart1 = [
     "Mi unicornio mascota",
     "Un loro parlante",
     "Elvis Presley",
@@ -17,7 +189,7 @@ function generateExcuse() {
     "Un simpático extraterrestre",
     "El fantasma de Abraham Lincoln",
     "Una horda de zombis",
-    "Papá Noel",
+    "Santa Claus",
     "La receta de galletas de mi abuela",
     "Una varita mágica",
     "Un mayordomo robot",
@@ -26,7 +198,7 @@ function generateExcuse() {
     "Un enjambre de libélulas lanzallamas",
     "Un equipo de gatitos superhéroes",
     "Un grupo de pingüinos bailarines",
-    "El Ratoncito Pérez",
+    "El Ratón Pérez",
     "Un vampiro simpático",
     "La olla de oro de un duende",
     "Un escuadrón de zombis que bailan disco",
@@ -41,7 +213,7 @@ function generateExcuse() {
     "Un comité de magos que leen la mente",
     "Un grupo de vaqueros teletransportadores",
     "Un pelotón de delfines superinteligentes",
-    "Un grupo de canguros surferos",
+    "Una manada de canguros surferos",
     "Una bandada de flamencos con mochilas propulsoras",
     "Una horda de zombis que hacen claqué",
     "Un coro de sirenas cantantes",
@@ -51,24 +223,16 @@ function generateExcuse() {
     "Una tripulación de osos patinadores",
     "Una fiesta de alienígenas que hacen breakdance",
     "Una congregación de gatos amantes de la música disco",
-    "Una banda de ardillas teletransportadoras",
+    "Una tropa de ardillas teletransportadoras",
     "Una pandilla de pandas que leen la mente",
     "Un grupo de pingüinos que viajan en el tiempo",
     "Un enjambre de luciérnagas bailarinas",
     "Una banda de pollos de rock and roll",
     "Un escuadrón de robots que hacen breakdance",
     "Una manada de canguros malabaristas",
-    "Una colonia de hormigas cantantes",
-    "Una banda de ositos de goma en una banda de música",
-    "Un equipo de ardillas acrobáticas",
-    "Un desfile de jirafas patinadoras",
-    "Una convención de físicos viajeros en el tiempo",
-    "Un grupo de robots breakdancers",
-    "Un flash mob de ninjas invisibles",
-    "Un comité de magos que leen la mente",
-    "Un grupo de vaqueros teletransportadores",
   ];
-  const excusesPart2 = [
+
+  const excusesEsPart2 = [
     "y yo fuimos a la luna juntos",
     "y yo formamos una banda de rock",
     "y yo abrimos un parque temático",
@@ -119,17 +283,9 @@ function generateExcuse() {
     "y yo resolvimos el misterio del Triángulo de las Bermudas",
     "y yo comenzamos un circo para animales",
     "y yo construimos una montaña rusa en nuestro patio trasero",
-    "y yo construimos un ejército de robots",
-    "y yo resolvimos un acertijo de una civilización antigua",
-    "y yo ganamos una competencia de cocina",
-    "y yo nos embarcamos en una búsqueda de un artefacto mágico",
-    "y yo nos convertimos en leyendas del rock and roll",
-    "y yo descubrimos un portal a otra dimensión",
-    "y yo fundamos una colonia en Marte",
-    "y yo nos convertimos en arqueólogos viajeros en el tiempo",
-    "y yo ganamos una maratón en la luna",
   ];
-  const excusesPart3 = [
+
+  const excusesEsPart3 = [
     "mientras cabalgaba en un pato de goma gigante",
     "con solo una cuchara y un pollo de goma.",
     "mientras hacía malabares con antorchas ardientes.",
@@ -154,7 +310,7 @@ function generateExcuse() {
     "mientras esquiaba acuático en un río de chocolate.",
     "mientras caminaba en una cuerda floja sobre un pozo de crema batida.",
     "en una sala de baile con dinosaurios que bailan disco.",
-    "mientras hacía snowboard en una montaña de nubes de azucar.",
+    "mientras hacía snowboard en una montaña de malvaviscos.",
     "en un pogo stick hecho de bandas de goma.",
     "mientras jugaba al escondite con amigos invisibles.",
     "en una habitación llena de pinturas parlantes.",
@@ -177,29 +333,11 @@ function generateExcuse() {
     "en una habitación con globos flotantes.",
     "mientras jugaba al ajedrez con un loro que habla.",
     "en un trampolín hecho de malvavisco saltarín.",
-    "mientras hacía yoga con bandas de goma flexibles.",
-    "en una habitación con globos flotantes.",
-    "mientras jugaba al ajedrez con un loro que habla.",
-    "en un trampolín hecho de malvavisco saltarín.",
-    "mientras hacía snowboard en una montaña de nubes de azucar.",
-    "en una habitación con paredes hechas de burbujas gigantes.",
-    "mientras surfeaba en una ola de crema batida.",
-    "en una habitación con un suelo hecho de teclas de piano gigantes.",
-    "mientras jugaba a los dardos con rayos.",
   ];
 
-  var randomPart1 =
-    excusesPart1[Math.floor(Math.random() * excusesPart1.length)];
-  var randomPart2 =
-    excusesPart2[Math.floor(Math.random() * excusesPart2.length)];
-  var randomPart3 =
-    excusesPart3[Math.floor(Math.random() * excusesPart3.length)];
+  const randomEsPart1 = excusesEsPart1[Math.floor(Math.random() * excusesEsPart1.length)];
+  const randomEsPart2 = excusesEsPart2[Math.floor(Math.random() * excusesEsPart2.length)];
+  const randomEsPart3 = excusesEsPart3[Math.floor(Math.random() * excusesEsPart3.length)];
 
-  let randomExcuse =
-    randomPart1 +
-    " " +
-    randomPart2 +
-    " " +
-    randomPart3;
-  return randomExcuse;
+  return "No lo creerás, pero:\n " + "<br/>" + randomEsPart1 + " " + randomEsPart2 + " " + randomEsPart3;
 }

@@ -154,7 +154,7 @@ function generateExcuse() {
     "mientras esquiaba acuático en un río de chocolate.",
     "mientras caminaba en una cuerda floja sobre un pozo de crema batida.",
     "en una sala de baile con dinosaurios que bailan disco.",
-    "mientras hacía snowboard en una montaña de malvaviscos.",
+    "mientras hacía snowboard en una montaña de nubes de azucar.",
     "en un pogo stick hecho de bandas de goma.",
     "mientras jugaba al escondite con amigos invisibles.",
     "en una habitación llena de pinturas parlantes.",
@@ -181,7 +181,7 @@ function generateExcuse() {
     "en una habitación con globos flotantes.",
     "mientras jugaba al ajedrez con un loro que habla.",
     "en un trampolín hecho de malvavisco saltarín.",
-    "mientras hacía snowboard en una montaña de malvaviscos.",
+    "mientras hacía snowboard en una montaña de nubes de azucar.",
     "en una habitación con paredes hechas de burbujas gigantes.",
     "mientras surfeaba en una ola de crema batida.",
     "en una habitación con un suelo hecho de teclas de piano gigantes.",
@@ -196,7 +196,6 @@ function generateExcuse() {
     excusesPart3[Math.floor(Math.random() * excusesPart3.length)];
 
   let randomExcuse =
-    "No te lo vas a creer, pero: " +
     randomPart1 +
     " " +
     randomPart2 +

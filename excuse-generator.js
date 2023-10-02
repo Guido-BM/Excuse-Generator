@@ -17,7 +17,7 @@ function generateExcuse() {
     "Un simpático extraterrestre",
     "El fantasma de Abraham Lincoln",
     "Una horda de zombis",
-    "Santa Claus",
+    "Papá Noel",
     "La receta de galletas de mi abuela",
     "Una varita mágica",
     "Un mayordomo robot",
@@ -26,7 +26,7 @@ function generateExcuse() {
     "Un enjambre de libélulas lanzallamas",
     "Un equipo de gatitos superhéroes",
     "Un grupo de pingüinos bailarines",
-    "El Ratón Pérez",
+    "El Ratoncito Pérez",
     "Un vampiro simpático",
     "La olla de oro de un duende",
     "Un escuadrón de zombis que bailan disco",
@@ -41,7 +41,7 @@ function generateExcuse() {
     "Un comité de magos que leen la mente",
     "Un grupo de vaqueros teletransportadores",
     "Un pelotón de delfines superinteligentes",
-    "Una manada de canguros surferos",
+    "Un grupo de canguros surferos",
     "Una bandada de flamencos con mochilas propulsoras",
     "Una horda de zombis que hacen claqué",
     "Un coro de sirenas cantantes",
@@ -51,13 +51,22 @@ function generateExcuse() {
     "Una tripulación de osos patinadores",
     "Una fiesta de alienígenas que hacen breakdance",
     "Una congregación de gatos amantes de la música disco",
-    "Una tropa de ardillas teletransportadoras",
+    "Una banda de ardillas teletransportadoras",
     "Una pandilla de pandas que leen la mente",
     "Un grupo de pingüinos que viajan en el tiempo",
     "Un enjambre de luciérnagas bailarinas",
     "Una banda de pollos de rock and roll",
     "Un escuadrón de robots que hacen breakdance",
     "Una manada de canguros malabaristas",
+    "Una colonia de hormigas cantantes",
+    "Una banda de ositos de goma en una banda de música",
+    "Un equipo de ardillas acrobáticas",
+    "Un desfile de jirafas patinadoras",
+    "Una convención de físicos viajeros en el tiempo",
+    "Un grupo de robots breakdancers",
+    "Un flash mob de ninjas invisibles",
+    "Un comité de magos que leen la mente",
+    "Un grupo de vaqueros teletransportadores",
   ];
   const excusesPart2 = [
     "y yo fuimos a la luna juntos",
@@ -110,6 +119,15 @@ function generateExcuse() {
     "y yo resolvimos el misterio del Triángulo de las Bermudas",
     "y yo comenzamos un circo para animales",
     "y yo construimos una montaña rusa en nuestro patio trasero",
+    "y yo construimos un ejército de robots",
+    "y yo resolvimos un acertijo de una civilización antigua",
+    "y yo ganamos una competencia de cocina",
+    "y yo nos embarcamos en una búsqueda de un artefacto mágico",
+    "y yo nos convertimos en leyendas del rock and roll",
+    "y yo descubrimos un portal a otra dimensión",
+    "y yo fundamos una colonia en Marte",
+    "y yo nos convertimos en arqueólogos viajeros en el tiempo",
+    "y yo ganamos una maratón en la luna",
   ];
   const excusesPart3 = [
     "mientras cabalgaba en un pato de goma gigante",
@@ -159,6 +177,15 @@ function generateExcuse() {
     "en una habitación con globos flotantes.",
     "mientras jugaba al ajedrez con un loro que habla.",
     "en un trampolín hecho de malvavisco saltarín.",
+    "mientras hacía yoga con bandas de goma flexibles.",
+    "en una habitación con globos flotantes.",
+    "mientras jugaba al ajedrez con un loro que habla.",
+    "en un trampolín hecho de malvavisco saltarín.",
+    "mientras hacía snowboard en una montaña de malvaviscos.",
+    "en una habitación con paredes hechas de burbujas gigantes.",
+    "mientras surfeaba en una ola de crema batida.",
+    "en una habitación con un suelo hecho de teclas de piano gigantes.",
+    "mientras jugaba a los dardos con rayos.",
   ];
 
   var randomPart1 =
@@ -169,7 +196,7 @@ function generateExcuse() {
     excusesPart3[Math.floor(Math.random() * excusesPart3.length)];
 
   let randomExcuse =
-    "You will not believe this but:\n " +
+    "No te lo vas a creer, pero: " +
     randomPart1 +
     " " +
     randomPart2 +

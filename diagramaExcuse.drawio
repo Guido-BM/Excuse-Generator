@@ -1,0 +1,112 @@
+<mxfile host="65bd71144e">
+    <diagram id="VThuvrxb8coQ9JUdkgJq" name="Page-1">
+        <mxGraphModel dx="1788" dy="907" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;fontSize=23;fontColor=#000000;strokeColor=#000000;strokeWidth=5;" edge="1" parent="1" source="2" target="7">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="Excuse Generator" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#000000;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="12" y="11" width="206" height="145" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Fin" style="ellipse;whiteSpace=wrap;html=1;fontSize=41;fillColor=#fad9d5;strokeColor=#ae4132;fontColor=#000000;" vertex="1" parent="1">
+                    <mxGeometry x="464.75" y="683" width="226.5" height="124" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="5" target="25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Bonon Generar excusa" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="693" y="172" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="6" target="5">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Parte 3&lt;br&gt;Array" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#000000;fontSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="677" y="38" width="152" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="7" target="8">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Parte 1&lt;br&gt;Array" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#000000;fontSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="271" y="39.5" width="152" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="8" target="6">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Parte 2&lt;br style=&quot;font-size: 23px;&quot;&gt;Array" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#000000;fontSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="469" y="39.5" width="152" height="88" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="16" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Obtener una parte 1 aleatoria" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;gradientColor=#97d077;strokeColor=#82b366;fontColor=#000000;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="342.5" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="17" target="23">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Obtener una parte 2 aleatoria" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;gradientColor=#97d077;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="167" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="18" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Obtener una parte 3 aleatoria" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;gradientColor=#97d077;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="183" y="286" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="20" target="26">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="Excusa&lt;br&gt;generada" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;fillColor=#bac8d3;strokeColor=#23445d;fontColor=#000000;fontSize=24;" vertex="1" parent="1">
+                    <mxGeometry x="502" y="271" width="139" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="22" target="20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Añadir a excusa" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;gradientColor=#97d077;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="342.5" y="286" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="23" target="18">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Añadir a excusa" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;gradientColor=#97d077;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="286" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="24" target="17">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Añadir a excusa" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#000000;gradientColor=#97d077;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="183" y="164" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="25" target="16">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Genera excusa&amp;nbsp; vacia" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;gradientColor=#7ea6e0;strokeColor=#6c8ebf;fontColor=#000000;fontSize=18;" vertex="1" parent="1">
+                    <mxGeometry x="518" y="172" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;" edge="1" parent="1" source="26" target="3">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="SI" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=23;fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="42">
+                    <mxGeometry x="-0.4506" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="" style="edgeStyle=none;html=1;strokeColor=#000000;strokeWidth=5;fontSize=23;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="26" target="5">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="670" y="618" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="No" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];fontSize=23;fontColor=#000000;labelBackgroundColor=none;" vertex="1" connectable="0" parent="44">
+                    <mxGeometry x="-0.8532" y="1" relative="1" as="geometry">
+                        <mxPoint x="6" y="9" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="La excusa &lt;br style=&quot;font-size: 25px;&quot;&gt;es valida?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;fillColor=#ffcd28;gradientColor=#ffa500;strokeColor=#d79b00;fontColor=#000000;fontSize=25;" vertex="1" parent="1">
+                    <mxGeometry x="477" y="421" width="189" height="198" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
